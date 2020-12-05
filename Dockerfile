@@ -29,7 +29,7 @@ RUN python3 --version
 RUN yum clean all && rm -rf /var/cache/yum
 
 # indra user config
-RUN adduser -c "account-user"
+RUN adduser -c "account-user" indra
 RUN ls /etc/
 RUN mkdir /etc/sudoers.d
 RUN ls /etc/sudoers.d

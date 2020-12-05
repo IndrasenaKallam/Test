@@ -8,7 +8,7 @@ USER root
 
 # copy the requirement.txt to docker images
 
-COPY  /home/ec2-user/test/requirements.txt /tmp/
+COPY  ./*requirements.txt /tmp/
 
 # installing the required packages
 

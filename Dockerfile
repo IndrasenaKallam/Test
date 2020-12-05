@@ -8,7 +8,7 @@ USER root
 
 # copy the requirement.txt to docker images
 
-COPY requirements*.txt /tmp/
+COPY requirements*.txt ./
 
 # installing the required packages
 

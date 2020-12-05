@@ -26,12 +26,12 @@ RUN python3 --version
 # Try to reduce the size of docker image
 RUN yum clean all && rm -rf /var/cache/yum
 
-# vaas user config
-RUN adduser -c "service account user" vaas
+# indra user config
+RUN adduser -c "account-user"
 RUN ls /etc/
 RUN mkdir /etc/sudoers.d
 RUN ls /etc/sudoers.d
-RUN touch /etc/sudoers.d/vaas
-RUN echo "vaas ALL=(root) NOPASSWD:ALL" > /etc/sudoers.d/vaas && chmod 0440 /etc/sudoers.d/vaas
+RUN touch /etc/sudoers.d/indra
+RUN echo "indra ALL=(root) NOPASSWD:ALL" > /etc/sudoers.d/indra && chmod 0440 /etc/sudoers.d/indra
 
 CMD ["bash"]

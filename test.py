@@ -4,8 +4,7 @@ from colorama import Fore, init
 import getpass
 import os
 
-from pip._vendor import requests
-from pip._vendor.urllib3.exceptions import InsecureRequestWarning
+
 
 '''
 parser = argparse.ArgumentParser(description='addition of two number')

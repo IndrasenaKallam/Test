@@ -2,6 +2,7 @@ import argparse
 import getpass
 from colorama import Fore, init
 import getpass
+import os
 
 from pip._vendor import requests
 from pip._vendor.urllib3.exceptions import InsecureRequestWarning
@@ -21,9 +22,9 @@ init(autoreset=True)
 
 
 class config_gen:
-    username = $username
-    password = $password
-
+    username = os.getenv("username")
+    password = os.getenv("password")
+    
     def __init__(self):
         print(Fore.BLUE + " please provide the credentials: ")
         #self.username = input("username is({}) : ".format(username)

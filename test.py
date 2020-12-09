@@ -20,9 +20,9 @@ class config_gen:
         self.name = os.getenv("middle")
         
     def getting_arguments(self):
-        print(self.username)
-        print(self.password)
-        print(self.name)
+        print(username)
+        print(password)
+        print(name)
         
 '''
         print(type(name))

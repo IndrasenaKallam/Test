@@ -20,7 +20,7 @@ class config_gen:
         print(Fore.BLUE + " please provide the credentials: ")
         # self.username = input("username is({}) : ".format(username)
         # self.password = getpass.getpass(prompt="enter the  password for %s: " % self.username)
-        name = os.getenv("name")
+        name = os.getenv("middle")
         left1 = self._physical_rack(name, -1)
         right1 = self._physical_rack(name, +1 )
         print(left1)

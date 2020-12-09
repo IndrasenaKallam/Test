@@ -7,22 +7,24 @@ import os
 init(autoreset=True)
 
 class config_gen:
-    username = os.getenv("username")
-    password = os.getenv("password")
+    username = ""
+    password = ""
     name = {"servers": []}
     left1 = {"servers": []}
     right1 = {"servers": []}
 
     def __init__(self):
         print(Fore.BLUE + " please provide the credentials: ")
+        self.username = os.getenv("username)"
+        self.password = os.getenv("password")
         # self.username = input("username is({}) : ".format(username)
         # self.password = getpass.getpass(prompt="enter the  password for %s: " % self.username)
         self.name = os.getenv("middle")
         
     def getting_arguments(self):
-        print(username)
-        print(password)
-        print(name)
+        print(self.username)
+        print(self.password)
+        print(self.name)
         
 '''
         print(type(name))

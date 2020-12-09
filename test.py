@@ -5,29 +5,21 @@ import getpass
 import os
 
 
-
-'''
-parser = argparse.ArgumentParser(description='addition of two number')
-parser.add_argument('-first', '--first_number', help='Enter the first number')
-parser.add_argument('-second', '--second_number', help='Enter the first number')
-opts = parser.parse_args()
-
-print(opts)
-
-'''
-
-#requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
+# requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
 init(autoreset=True)
 
 
 class config_gen:
     username = os.getenv("username")
     password = os.getenv("password")
-    
+    name = {"servers":[]}
+    name1 = {"servers":[]}
+
     def __init__(self):
         print(Fore.BLUE + " please provide the credentials: ")
-        #self.username = input("username is({}) : ".format(username)
-        #self.password = getpass.getpass(prompt="enter the  password for %s: " % self.username)
+        # self.username = input("username is({}) : ".format(username)
+        # self.password = getpass.getpass(prompt="enter the  password for %s: " % self.username)
+        name = os.getenv(name)
 
     def getting_arguments(self):
         print(self.username)

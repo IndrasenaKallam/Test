@@ -27,7 +27,7 @@ class config_gen:
     def __init__(self):
         print(Fore.BLUE + " please provide the credentials: ")
         #self.username = input("username is({}) : ".format(username)
-        #self.password = getpass.getpass(prompt="PDX-ENG password for %s: " % self.username)
+        #self.password = getpass.getpass(prompt="enter the  password for %s: " % self.username)
 
     def getting_arguments(self):
         print(self.username)

@@ -1,8 +1,6 @@
-import argparse
-import getpass
 from colorama import Fore, init
-import getpass
-import os
+# import getpass
+# import os
 
 
 # requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
@@ -10,8 +8,8 @@ init(autoreset=True)
 
 
 class config_gen:
-    username = os.getenv("username")
-    password = os.getenv("password")
+    username = "indrasena"
+    password = "kallam"
     name = {"servers": []}
     left1 = {"servers": []}
     right1 = {"servers": []}
@@ -20,7 +18,7 @@ class config_gen:
         print(Fore.BLUE + " please provide the credentials: ")
         # self.username = input("username is({}) : ".format(username)
         # self.password = getpass.getpass(prompt="enter the  password for %s: " % self.username)
-        name = os.getenv("middle")
+        name = "h09"
         print(type(name))
         left1 = self._physical_rack(name, -1)
         right1 = self._physical_rack(name, +1)

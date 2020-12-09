@@ -2,7 +2,7 @@ from colorama import Fore, init
 # import getpass
 import os
 import sys
-
+from os import environ
 
 # requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
 init(autoreset=True)

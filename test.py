@@ -10,6 +10,7 @@ init(autoreset=True)
 class config_gen:
     username = os.getenv("username")
     password = os.getenv("password")
+    dummy = os.getenv("middle")
     name = {"servers": []}
     left1 = {"servers": []}
     right1 = {"servers": []}
@@ -18,7 +19,8 @@ class config_gen:
         print(Fore.BLUE + " please provide the credentials: ")
         # self.username = input("username is({}) : ".format(username)
         # self.password = getpass.getpass(prompt="enter the  password for %s: " % self.username)
-        name = os.getenv("middle")
+        print
+        name = self.dummy
         print(type(name))
         left1 = self._physical_rack(name, -1)
         right1 = self._physical_rack(name, +1)

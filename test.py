@@ -38,5 +38,4 @@ class config_gen:
 
 
 if __name__ == '__main__':
-    generator = config_gen()
-    generator.getting_arguments()
+    config_gen().getting_arguments()

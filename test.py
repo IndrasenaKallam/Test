@@ -29,7 +29,7 @@ class config_gen:
 
     @staticmethod
     def _physical_rack(self, name, incremental):
-        return self.name[:-2] + "{0:0=2d}".format(int(self.name[-2:]) + incremental)
+        return self.name[:-2] + "{0:0=2d}".format(int(self.name[-2:]) + self.incremental)
 
     def getting_arguments(self):
         print(self.username)

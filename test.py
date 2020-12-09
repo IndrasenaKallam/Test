@@ -16,11 +16,11 @@ class config_gen:
 
     def __init__(self):
         print(Fore.BLUE + " please provide the credentials: ")
-        self.username = sys.argv[0]
-        self.password = sys.argv[1]
+        self.username = os.environ.get["username"]
+        self.password = os.environ.get["password"]
         # self.username = input("username is({}) : ".format(username)
         # self.password = getpass.getpass(prompt="enter the  password for %s: " % self.username)
-        self.name = sys.argv[2]
+        self.name = os.environ.get["middle"]
         
     def getting_arguments(self):
         print(self.username)

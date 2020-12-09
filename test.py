@@ -8,8 +8,8 @@ init(autoreset=True)
 
 
 class config_gen:
-    username = "indrasena"
-    password = "kallam"
+    username = os.getenv("username")
+    password = os.getenv("password")
     name = {"servers": []}
     left1 = {"servers": []}
     right1 = {"servers": []}
@@ -18,7 +18,7 @@ class config_gen:
         print(Fore.BLUE + " please provide the credentials: ")
         # self.username = input("username is({}) : ".format(username)
         # self.password = getpass.getpass(prompt="enter the  password for %s: " % self.username)
-        name = "h09"
+        name = os.getenv("middle")
         print(type(name))
         left1 = self._physical_rack(name, -1)
         right1 = self._physical_rack(name, +1)
@@ -27,8 +27,8 @@ class config_gen:
         print(name)
 
     @staticmethod
-    def _physical_rack(name, incremental):
-        return name[:-2] + "{0:0=2d}".format(int(name[-2:]) + incremental)
+    def _physical_rack(self, name, incremental):
+        return self.name[:-2] + "{0:0=2d}".format(int(self.name[-2:]) + incremental)
 
     def getting_arguments(self):
         print(self.username)

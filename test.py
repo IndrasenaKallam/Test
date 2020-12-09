@@ -8,8 +8,8 @@ from os import environ
 init(autoreset=True)
 
 class config_gen:
-    username = ""
-    password = ""
+    username = environ.get('username')
+    password = "kalal"
     name = {"servers": []}
     left1 = {"servers": []}
     right1 = {"servers": []}

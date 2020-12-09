@@ -15,7 +15,7 @@ class config_gen:
 
     def __init__(self):
         print(Fore.BLUE + " please provide the credentials: ")
-        self.username = os.getenv("username)"
+        self.username = os.getenv("username")
         self.password = os.getenv("password")
         # self.username = input("username is({}) : ".format(username)
         # self.password = getpass.getpass(prompt="enter the  password for %s: " % self.username)

@@ -1,6 +1,6 @@
 from colorama import Fore, init
 # import getpass
-# import os
+import os
 
 
 # requests.packages.urllib3.disable_warnings(InsecureRequestWarning)

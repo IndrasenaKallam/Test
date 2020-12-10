@@ -5,8 +5,8 @@
 FROM centos:latest
 
 USER root
-ENV username 
-ENV password
+ENV username "" 
+ENV password ""
 
 # copy the requirement.txt to docker images
 

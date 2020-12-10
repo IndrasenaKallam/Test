@@ -1,0 +1,3 @@
+env.username env.password None
+environ({'HOSTNAME': 'fc5040db2f6b', 'PWD': '/', 'HOME': '/root', 'username': 'env.username', 'TERM': 'xterm', 'SHLVL': '1', 'PATH': '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'password': 'env.password', '_': '/usr/bin/python3', 'LC_CTYPE': 'C.UTF-8'})
+env.username

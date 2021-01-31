@@ -1,12 +1,6 @@
 Hello this indrasena 
 kallam
 indrasena
-<<<<<<< HEAD
 indra
 indra2
 indra99
-=======
-indra1
-indra2
-indra0101010
->>>>>>> indra2
